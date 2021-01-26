@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eHQ-nA-FBH">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VC-->
+        <scene sceneID="hn2-7W-NV9">
+            <objects>
+                <viewController storyboardIdentifier="VC" title="VC" id="Nvn-l5-jXV" customClass="ScoreViewController" customModule="Flappy_Bird" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jsx-0t-aDb">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="FRa-V4-bIf">
+                                <rect key="frame" x="0.0" y="0.0" width="962" height="1007"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGHSCORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31x-wY-eNV">
+                                <rect key="frame" x="59" y="41" width="141.5" height="37"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR SCORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I51-lz-VKp">
+                                <rect key="frame" x="57" y="485" width="848" height="37"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="247" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG6-ri-7ez">
+                                <rect key="frame" x="67" y="86" width="828" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="48m-mF-vfC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPz-Pn-Uf1">
+                                <rect key="frame" x="67" y="561" width="828" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gVW-Zx-Lax"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFx-Gb-5Da">
+                                <rect key="frame" x="422" y="631" width="118" height="41"/>
+                                <color key="backgroundColor" red="0.25612209419999998" green="0.87551554570000001" blue="0.6876273182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                <state key="normal" title="MAIN MENU">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eHQ-nA-FBH" kind="show" id="Llw-7D-Tkb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TG6-ri-7ez" firstAttribute="leading" secondItem="uCi-12-5Y0" secondAttribute="leading" constant="67" id="41v-tg-04a"/>
+                            <constraint firstItem="FRa-V4-bIf" firstAttribute="centerY" secondItem="I51-lz-VKp" secondAttribute="centerY" id="8kt-1f-DuN"/>
+                            <constraint firstItem="TG6-ri-7ez" firstAttribute="top" secondItem="31x-wY-eNV" secondAttribute="bottom" constant="8" symbolic="YES" id="Fdx-cU-tWu"/>
+                            <constraint firstItem="I51-lz-VKp" firstAttribute="centerX" secondItem="nPz-Pn-Uf1" secondAttribute="centerX" id="HLB-dM-2zG"/>
+                            <constraint firstItem="GFx-Gb-5Da" firstAttribute="leading" secondItem="uCi-12-5Y0" secondAttribute="leading" constant="422" id="Jnc-d4-hGd"/>
+                            <constraint firstItem="FRa-V4-bIf" firstAttribute="top" secondItem="jsx-0t-aDb" secondAttribute="top" id="Nea-Vo-IUv"/>
+                            <constraint firstItem="FRa-V4-bIf" firstAttribute="centerX" secondItem="I51-lz-VKp" secondAttribute="centerX" id="ZkB-I7-B64"/>
+                            <constraint firstItem="FRa-V4-bIf" firstAttribute="leading" secondItem="jsx-0t-aDb" secondAttribute="leading" id="id5-w3-auf"/>
+                            <constraint firstItem="FRa-V4-bIf" firstAttribute="bottom" secondItem="uCi-12-5Y0" secondAttribute="bottom" id="n4c-gJ-MHh"/>
+                            <constraint firstItem="31x-wY-eNV" firstAttribute="top" secondItem="uCi-12-5Y0" secondAttribute="top" constant="41" id="quZ-He-ZYc"/>
+                            <constraint firstItem="nPz-Pn-Uf1" firstAttribute="top" secondItem="I51-lz-VKp" secondAttribute="bottom" constant="39" id="qy1-de-wpU"/>
+                            <constraint firstItem="31x-wY-eNV" firstAttribute="leading" secondItem="uCi-12-5Y0" secondAttribute="leading" constant="59" id="s7l-gt-y6q"/>
+                            <constraint firstItem="nPz-Pn-Uf1" firstAttribute="centerX" secondItem="GFx-Gb-5Da" secondAttribute="centerX" id="sHS-Xn-1ct"/>
+                            <constraint firstItem="TG6-ri-7ez" firstAttribute="leading" secondItem="nPz-Pn-Uf1" secondAttribute="leading" id="ssL-F9-aeu"/>
+                            <constraint firstItem="uCi-12-5Y0" firstAttribute="bottom" secondItem="GFx-Gb-5Da" secondAttribute="bottom" constant="335" id="t83-0s-sMi"/>
+                            <constraint firstItem="uCi-12-5Y0" firstAttribute="trailing" secondItem="31x-wY-eNV" secondAttribute="trailing" constant="63" id="t91-Em-p7Y"/>
+                            <constraint firstItem="TG6-ri-7ez" firstAttribute="trailing" secondItem="nPz-Pn-Uf1" secondAttribute="trailing" id="uAr-pP-LB1"/>
+                            <constraint firstItem="I51-lz-VKp" firstAttribute="leading" secondItem="uCi-12-5Y0" secondAttribute="leading" constant="57" id="ugv-YT-nFJ"/>
+                            <constraint firstAttribute="trailing" secondItem="FRa-V4-bIf" secondAttribute="trailing" id="ysC-hg-WpG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uCi-12-5Y0"/>
+                    </view>
+                    <connections>
+                        <outlet property="highscore" destination="TG6-ri-7ez" id="kfH-4b-0ZR"/>
+                        <outlet property="score" destination="nPz-Pn-Uf1" id="uIT-uZ-JTa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4g-JQ-d8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785.50724637681162" y="19.565217391304348"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="GOc-TI-55z">
+            <objects>
+                <viewController id="eHQ-nA-FBH" customClass="MainViewController" customModule="Flappy_Bird" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2uO-1O-ibN">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="FzL-Bu-ZyM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="888"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEK-1X-JA3">
+                                <rect key="frame" x="134" y="339" width="146" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="aSn-Sk-DqO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Medium">
+                                    <color key="titleColor" red="0.82818259260000004" green="0.46976925139999998" blue="0.46062151899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="show" identifier="medium" id="b92-Fd-azj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ld-Mw-3z9">
+                                <rect key="frame" x="116" y="253" width="183" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="58" id="07V-gn-Kr0"/>
+                                    <constraint firstAttribute="width" constant="183" id="VMs-im-O2C"/>
+                                    <constraint firstAttribute="height" constant="58" id="g9l-ra-3tb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Easy">
+                                    <color key="titleColor" red="0.82818259260000004" green="0.46976925139999998" blue="0.46062151899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="show" identifier="easy" id="f1U-ZU-TJX"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="L2y-lk-hxu">
+                                <rect key="frame" x="87" y="61" width="243" height="152"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6r-Yb-gPc">
+                                <rect key="frame" x="138" y="421" width="142" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="5gy-OF-FAw"/>
+                                    <constraint firstAttribute="width" constant="142" id="dbi-uu-ByV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Hard">
+                                    <color key="titleColor" red="0.82818259260000004" green="0.46976925139999998" blue="0.46062151899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="show" identifier="hard" id="NDu-E0-IYe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MEK-1X-JA3" firstAttribute="trailing" secondItem="O6r-Yb-gPc" secondAttribute="trailing" id="02l-OH-laj"/>
+                            <constraint firstItem="V2X-9M-3nP" firstAttribute="trailing" secondItem="MEK-1X-JA3" secondAttribute="trailing" constant="134" id="26k-PJ-Ekp"/>
+                            <constraint firstItem="FzL-Bu-ZyM" firstAttribute="leading" secondItem="2uO-1O-ibN" secondAttribute="leading" id="6Lg-7y-Rkp"/>
+                            <constraint firstItem="FzL-Bu-ZyM" firstAttribute="trailing" secondItem="V2X-9M-3nP" secondAttribute="trailing" id="8Bu-DW-zm1"/>
+                            <constraint firstItem="FzL-Bu-ZyM" firstAttribute="top" secondItem="2uO-1O-ibN" secondAttribute="top" id="Ar5-yK-X0P"/>
+                            <constraint firstItem="9Ld-Mw-3z9" firstAttribute="leading" secondItem="V2X-9M-3nP" secondAttribute="leading" constant="116" id="BSW-QJ-NFF"/>
+                            <constraint firstItem="O6r-Yb-gPc" firstAttribute="top" secondItem="MEK-1X-JA3" secondAttribute="bottom" constant="25" id="EMp-5h-SWc"/>
+                            <constraint firstAttribute="bottom" secondItem="FzL-Bu-ZyM" secondAttribute="bottom" id="Efw-qI-Ney"/>
+                            <constraint firstAttribute="bottom" secondItem="FzL-Bu-ZyM" secondAttribute="bottom" id="GfL-NJ-Pze"/>
+                            <constraint firstItem="MEK-1X-JA3" firstAttribute="leading" secondItem="O6r-Yb-gPc" secondAttribute="leading" constant="-4" id="HAB-cX-5rB"/>
+                            <constraint firstItem="FzL-Bu-ZyM" firstAttribute="leading" secondItem="V2X-9M-3nP" secondAttribute="leading" id="JTk-lH-8pM"/>
+                            <constraint firstAttribute="bottom" secondItem="FzL-Bu-ZyM" secondAttribute="bottom" id="LDZ-g2-ZwW"/>
+                            <constraint firstItem="9Ld-Mw-3z9" firstAttribute="centerX" secondItem="L2y-lk-hxu" secondAttribute="centerX" constant="-1" id="Ld0-av-gi4"/>
+                            <constraint firstItem="MEK-1X-JA3" firstAttribute="top" secondItem="L2y-lk-hxu" secondAttribute="bottom" constant="126" id="PGE-6D-giy"/>
+                            <constraint firstItem="V2X-9M-3nP" firstAttribute="bottom" secondItem="O6r-Yb-gPc" secondAttribute="bottom" constant="341" id="Sm1-KR-hMV"/>
+                            <constraint firstItem="L2y-lk-hxu" firstAttribute="leading" secondItem="V2X-9M-3nP" secondAttribute="leading" constant="87" id="Sr0-E3-Oip"/>
+                            <constraint firstItem="V2X-9M-3nP" firstAttribute="trailing" secondItem="O6r-Yb-gPc" secondAttribute="trailing" constant="134" id="VQk-UV-FMq"/>
+                            <constraint firstItem="9Ld-Mw-3z9" firstAttribute="trailing" secondItem="MEK-1X-JA3" secondAttribute="trailing" constant="19" id="ZmF-TO-Q4a"/>
+                            <constraint firstItem="FzL-Bu-ZyM" firstAttribute="top" secondItem="2uO-1O-ibN" secondAttribute="top" id="g2i-JJ-MJ8"/>
+                            <constraint firstItem="V2X-9M-3nP" firstAttribute="trailing" secondItem="L2y-lk-hxu" secondAttribute="trailing" constant="84" id="gRt-GS-Pxr"/>
+                            <constraint firstItem="MEK-1X-JA3" firstAttribute="top" secondItem="9Ld-Mw-3z9" secondAttribute="bottom" constant="28" id="hnG-2H-toh"/>
+                            <constraint firstItem="FzL-Bu-ZyM" firstAttribute="top" secondItem="2uO-1O-ibN" secondAttribute="top" id="n8W-ja-k9Q"/>
+                            <constraint firstItem="9Ld-Mw-3z9" firstAttribute="top" secondItem="V2X-9M-3nP" secondAttribute="top" constant="253" id="rru-lg-QSG"/>
+                            <constraint firstItem="FzL-Bu-ZyM" firstAttribute="leading" secondItem="V2X-9M-3nP" secondAttribute="leading" id="sET-MO-eU3"/>
+                            <constraint firstItem="V2X-9M-3nP" firstAttribute="trailing" secondItem="9Ld-Mw-3z9" secondAttribute="trailing" constant="115" id="wSF-nZ-p1S"/>
+                            <constraint firstItem="L2y-lk-hxu" firstAttribute="top" secondItem="V2X-9M-3nP" secondAttribute="top" constant="61" id="xOQ-bp-w0c"/>
+                            <constraint firstItem="9Ld-Mw-3z9" firstAttribute="leading" secondItem="MEK-1X-JA3" secondAttribute="leading" constant="-18" id="xsg-ma-Sld"/>
+                            <constraint firstAttribute="trailing" secondItem="FzL-Bu-ZyM" secondAttribute="trailing" id="yVY-BG-Lpy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V2X-9M-3nP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2k8-Ff-H6r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-752.17391304347836" y="30.803571428571427"/>
+        </scene>
+        <!--GameViewController-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" title="GameViewController" id="BV1-FR-VrT" customClass="GameViewController" customModule="Flappy_Bird" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                    </view>
+                    <connections>
+                        <segue destination="Nvn-l5-jXV" kind="show" identifier="VC" id="36c-pf-WkL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="31"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="b92-Fd-azj"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="bg" width="500" height="888"/>
+        <image name="logo" width="396" height="117"/>
+    </resources>
+</document>
